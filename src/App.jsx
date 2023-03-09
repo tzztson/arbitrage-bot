@@ -13,8 +13,10 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
+  // Navigate,
 } from "react-router-dom";
+import LayoutHeader from './component/layoutHeader';
+import LayoutFooter from './component/layoutFooter';
 
 export default function App() {
 
@@ -23,6 +25,7 @@ export default function App() {
   return (
     <div>
       <DarkProvider>
+        <LayoutHeader />
         <Router>
           <Routes>
             {/* <Route
@@ -37,6 +40,7 @@ export default function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
+        <LayoutFooter />
       </DarkProvider>
     </div>
   )
