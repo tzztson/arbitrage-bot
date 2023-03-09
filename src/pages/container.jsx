@@ -26,7 +26,7 @@ export default function Container() {
     const {darkMode} = useContext(DarkContext);
 
     return (
-        <div className={`background-${darkMode}`}>
+        <div className={`background-${darkMode} `}>
             <LayoutHeader />
             <Router>
                 <Routes>
