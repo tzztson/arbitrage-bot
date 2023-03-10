@@ -11,7 +11,7 @@ const Home = () => {
                 <img src={require('../assets/img/hu-logo.png')} className="rounded-full w-64 h-64" alt="hu-zheng-logo" />
                 <h1 className="font-black text-4xl leading-[48px]">Web Developer, Writer, <br />Open-Source Developer</h1>
                 <p className="font-light text-xl">I’m Hu Zheng, a web developer and open-source contributor based in Taipei, Taiwan🏝.  I’m leader developer of <a href="https://taipeicare.com/" className="underline text-sky-600">The Health-Care Company</a>, where we develop technologies that grow and consolidate industries.</p>
-                <div className="flex gap-8 items-center">
+                <div className="flex gap-8 items-center py-2">
                     <a href="https://www.linkedin.com/in/hu-zheng-a2208925a/" target="_blank" rel="noreferrer"><img src={require('../assets/img/linkedin.png')} className="w-8 h-8" alt="" /></a>
                     <a href="https://github.com/tzztson" target="_blank" rel="noreferrer"><img src={require('../assets/img/github.png')} className="w-8 h-8" alt="" /></a>
                     <a href="https://medium.com/@zhenghu61919" target="_blank" rel="noreferrer"><img src={require('../assets/img/medium.png')} className="w-8 h-8" alt="" /></a>
