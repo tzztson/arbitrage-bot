@@ -34,7 +34,12 @@ body {
 
 .swiper {
   width: 100%;
-  height: 500px;
+  height: 100%;
+  /* height: 500px; */
+}
+
+.swiper .swiper-slide {
+  height: auto;
 }
 
 .swiper-slide {
@@ -44,3 +49,4 @@ body {
   justify-content: center;
   align-items: center;
 }
+

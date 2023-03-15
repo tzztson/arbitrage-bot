@@ -1,12 +1,19 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination, EffectFade } from "swiper";
+import { FreeMode, Pagination, Navigation, EffectFade } from "swiper";
+
+import { DarkContext } from "../context/darkThemeContext";
+import { useContext } from 'react';
 
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
+import { testimonial_clients } from "../consts/site-contents";
 
 const SwiperTestimonial = () => {
+
+    const { darkMode } = useContext(DarkContext);
     return (
         <Swiper
             slidesPerView={1}
@@ -28,16 +35,25 @@ const SwiperTestimonial = () => {
                     spaceBetween: 50,
                 },
             }}
-            modules={[Pagination]}
+            modules={[Pagination, Navigation]}
             className="mySwiper"
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide><div className="border gap-4 bg-white shadow-md rounded-2xl h-[500px]">Hi</div></SwiperSlide>
-            <SwiperSlide><div className="border gap-4 bg-white shadow-md rounded-2xl h-[500px]">Hi</div></SwiperSlide>
-            <SwiperSlide><div className="border gap-4 bg-white shadow-md rounded-2xl h-[500px]">Hi</div></SwiperSlide>
-            <SwiperSlide><div className="border gap-4 bg-white shadow-md rounded-2xl h-[500px]">Hi</div></SwiperSlide>
-            ...
+
+            {testimonial_clients.map((ele, ind) => {
+                return (
+                    <SwiperSlide key={`testimonial-${ind}`}>
+                        <div className={`border py-4 gap-4 container-${darkMode} shadow-md rounded-2xl  relative my-12`}>
+                            <img src={require(`../assets/avatar/${ele.image}.png`)} className="absolute -top-10 left-1/2 -translate-x-1/2  rounded-full w-24 h-24 border" alt="" />
+                            <div className="pt-16  px-3 flex  flex-col gap-4">
+                                <p className="">{ele.name}</p>
+                                <p className="">{ele.testimonial}</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                )
+            })}
         </Swiper>
     );
 };
