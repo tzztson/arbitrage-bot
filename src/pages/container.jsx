@@ -27,7 +27,7 @@ export default function Container() {
 
     return (
         <div className={`background-${darkMode} `}>
-            {/* <LayoutHeader />
+            <LayoutHeader />
             <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -37,7 +37,7 @@ export default function Container() {
                     <Route path="/hireme" element={<HireMe />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
-            </Router> */}
+            </Router>
             <LayoutFooter />
 
         </div>
