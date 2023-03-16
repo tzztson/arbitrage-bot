@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div>
             <div className={`container-${darkMode} text-${darkMode} container mx-auto px-12 max-sm:px-6 py-4 flex  shadow-lg`}>
-                <div className="flex-[1_1_70%] px-12 flex flex-col gap-4">
+                <div className="flex-[1_1_70%] px-12 max-sm:px-0 flex flex-col gap-4">
                     <img src={require('../assets/img/hu-logo.png')} className="rounded-full w-64 h-64" alt="hu-zheng-logo" />
                     <h1 className="font-black text-4xl leading-[48px]">Web Developer, Writer, <br />Open-Source Developer</h1>
                     <p className="font-light text-xl">I’m <span className="font-medium underline">Hu Zheng</span>, a web developer and open-source contributor based in Taipei, Taiwan🏝.  I’m leader developer of <a href="https://tzztson.com/" className="underline text-sky-600">tzztson federation</a>, where we develop technologies that grow and consolidate industries.</p>
@@ -21,7 +21,7 @@ const Home = () => {
                         <a href="https://stackoverflow.com/users/19992928/tzztson" target="_blank" rel="noreferrer"><img src={require('../assets/img/stackoverflow.png')} className="w-8 h-8" alt="" /></a>
                     </div>
                 </div>
-                <div className="flex-[1_1_30%] px-12 flex flex-col gap-4"></div>
+                <div className="flex-[1_1_30%]  max-sm:hidden px-12 flex flex-col gap-4"></div>
             </div>
             <div className={`container-${darkMode} text-${darkMode} container mx-auto px-12 max-sm:px-6 py-4 flex flex-col gap-4 py-16  shadow-lg`}>
                 <p className="text-2xl font-black py-2">Client Testimonials</p>

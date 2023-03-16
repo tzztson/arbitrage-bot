@@ -19,7 +19,7 @@ export const testimonial_clients = [
     {
         image: "francis",
         name: "Francis Kemp",
-        testimonial: "Hu was an absolute pleasure to work with. He developed our full-stack website from scratch and was extremely knowledgeable and communicative throughout the project. He was able to easily understand our requirements and quickly develop a website that met our needs. I'd definitely recommend him for any full-stack web development project!"
+        testimonial: "Working with Hu has been a great experience. He quickly grasps the requirements and delivers a result that meets our needs. He is highly organized and works hard to ensure that the end product is of the highest quality. We appreciate his dedication to our project and his eagerness to learn new technologies and techniques."
     },
 
 ];

@@ -23,17 +23,13 @@ import LayoutFooter from '../component/layoutFooter';
 
 export default function Container() {
 
-    const {darkMode} = useContext(DarkContext);
+    const { darkMode } = useContext(DarkContext);
 
     return (
         <div className={`background-${darkMode} `}>
-            <LayoutHeader />
+            {/* <LayoutHeader />
             <Router>
                 <Routes>
-                    {/* <Route
-              path="/"
-              element={<Navigate to={"/home"} />}
-            /> */}
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/blogs" element={<Blogs />} />
@@ -41,7 +37,7 @@ export default function Container() {
                     <Route path="/hireme" element={<HireMe />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
-            </Router>
+            </Router> */}
             <LayoutFooter />
 
         </div>
